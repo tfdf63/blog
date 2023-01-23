@@ -1,4 +1,4 @@
-$lightgGreen: #b9e7e7;
+$lightgGreen: #619c41;
 
 .app {
   display: flex;
@@ -23,7 +23,7 @@ $lightgGreen: #b9e7e7;
 
     h1 {
       font-size: 20px;
-      color: teal;
+      color: white;
       margin-bottom: 20px;
     }
 
@@ -44,7 +44,7 @@ $lightgGreen: #b9e7e7;
       button {
         padding: 10px;
         border: none;
-        background-color: teal;
+        background-color: $lightgGreen;
         cursor: pointer;
         color: white;
       }
@@ -99,16 +99,31 @@ $lightgGreen: #b9e7e7;
           align-items: center;
           justify-content: center;
           font-weight: 300;
-
+          color: white;
           &:hover {
             width: 48px;
             height: 48px;
             color: teal;
             background-color: white;
-            border: 1px solid teal;
+            border: 1px solid $lightgGreen;
           }
         }
       }
+    }
+  }
+
+  //FOOTER
+
+  footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: $lightgGreen;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      height: 50px;
     }
   }
 }
