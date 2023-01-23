@@ -24,7 +24,7 @@ $lightgGreen: #619c41;
     h1 {
       font-size: 20px;
       // color: white;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
 
     form {
@@ -307,6 +307,94 @@ $lightgGreen: #619c41;
             background-color: $lightgGreen;
             color: white;
           }
+        }
+      }
+    }
+  }
+
+  //WRITE
+
+  .add {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    .content {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      input {
+        padding: 10px;
+        border: 1 px solid lightgray;
+      }
+
+      .editorContainer {
+        height: 300px;
+        overflow: scroll;
+        border: 1 px solid lightgray;
+
+        .editor {
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    .menu {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .item {
+        border: 1px solid lightgray;
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #555;
+
+        h1 {
+          font-size: 20px;
+        }
+        .file {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+
+          :first-child {
+            width: max-content;
+            padding: 3px 5px;
+            cursor: pointer;
+            color: $lightgGreen;
+            background-color: white;
+            border: 1px solid $lightgGreen;
+            border-radius: 12px;
+          }
+          :last-child {
+            width: max-content;
+            padding: 3px 5px;
+            cursor: pointer;
+            color: white;
+            background-color: $lightgGreen;
+            border: 1px solid $lightgGreen;
+            border-radius: 12px;
+          }
+        }
+
+        .cat {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          color: $lightgGreen;
         }
       }
     }
